@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    table {
+        width :100%;
+        border: 1px solid black;
+        border-spacing: 25px;
+      }
+      caption{
+        padding-top:20px
+      }
+    td {
+        text-align:center;
+        border:1px solid black;
+        padding:10px;
+      }
+      tr{
+        padding-top:10px;
+        padding-bottom:20px;
+      }
+      .green{
+        background-color: rgb(83,183,83);
+      }
+      .dgreen{
+        background-color: rgb(9,150,9);
+
+      }
+      .lblue{
+        background-color: rgb(99,200,204);
+      }
+      .dblue{
+        background-color: blue;
+      }
+      .blue{
+        background-color: rgb(53,170,224);
+      }
+      </style>
+      </head>
+      <body>
+        <table>
+            <caption>HTML with CSS</caption>
+            <tr>
+                <td class="dgreen">this</td>
+                <td class="dgreen">little</td>
+                <td class="green">piggy</td>
+                <td class="lblue">went</td>
+                <td class="blue">to</td>
+                <td class="dblue">market</td>
+                </tr>
+                <tr>
+                    <td class="dgreen" colspan="2">this</td>
+                    <td class="dgreen">little</td>
+                <td class="green">piggy</td>
+                <td class="lblue">went</td>
+                <td class="blue">to</td>
+            
+                </tr>
+                <tr>
+                    <td class ="dgreen" colspan="2" rowspan="2">this</td>
+                    <td class="dgreen" rowspan="2">little</td>
+                <td class="green">piggy</td>
+                
+                <td class="blue" rowspan="2">to</td>
+                <td class="dblue" rowspan="2">market</td>
+                </tr>
+                <tr><td class="green">went</td>
+                </tr>
+                <tr>
+                    <td class="dgreen">this</td>
+                    <td class="dgreen">little</td>
+                <td class="green">piggy</td>
+                <td class="lblue">went</td>
+                <td class="blue">to</td>
+                <td class="blue" colspan="2">market</td>
+                </tr>
+        </table>
+   
+    </body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+</html>

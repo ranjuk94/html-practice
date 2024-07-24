@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        background-color: rgb(219, 213, 204);
+        padding: 0;
+        box-sizing: border-bpx;
+
+    }
+    table{
+        width:700px;
+        padding-left: 50px;
+        border-spacing: 25px;
+    }
+    
+    .labels{
+        width:250px;
+        height: 30px;
+        font-size: large;
+       }
+       button[name="submit"]{
+        margin-left: 30px;
+        width: 75px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+       }
+       button[name="reset"]{
+        margin-left: 70px;
+        width: 75px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+       }
+       input[type="radio"]{
+        width: 20px;
+       }
+
+</style>
+<body>
+
+        <form>
+            <legend><h1><center><u>Registration Form</u></center></h1></legend>
+            <table>
+           
+            <tr>
+                <td class="labels"> <label>First Name</label></td>
+                <td><input type="text" class="inputs" required></td>
+            </tr>
+            <tr>
+                <td class="labels"> <label>Last Name</label></td>
+                <td><input type="text" class="inputs" required></td>
+            </tr>
+            <tr>
+                <td class="labels"> <label>Nick Name</label></td>
+                <td><input type="text" class="inputs"></td>
+            </tr>
+            <tr>
+                <td class="labels"> <label>Email</label></td>
+                <td><input type="email" class="inputs"></td>
+            </tr>
+            <td class="labels"> <label>Password</label></td>
+            <td><input type="password" class="inputs"></td>
+        </tr>
+        <tr>
+            <td class="labels"> <label>Date of Birth</label></td>
+            <td><input type="date" class="inputs"></td>
+        </tr>
+        <tr>
+            <td class="labels"><label>Gender</label></td>
+           <td> <input type="radio" class="inputs" id="male" name="gender" value="Male"><label for="male">Male</label>
+            <input type="radio" class="inputs" id="female" name="gender" value="Female"><label for="female">Female</label>
+            <input type="radio" class="inputs" id="others" name="gender" value="Others"><label for="others">Others</label>
+          </td>
+        </tr>
+        <tr>
+            <td class="labels"> <label>Mobile</label></td>
+            <td><input type="number" class="inputs" required></td>
+        </tr>
+        <tr rowspan="4">
+            <td class="labels"> <label>Address</label></td>
+            <td><textarea class="inputs" style="height:80px;"></textarea></td>
+            <tr>
+                <td></td>
+                <td><button name="submit">Submit</button><button type="reset" name="reset">Reset</button></td>
+               </tr>
+        
+            </table>
+        </form>
+
+</body>
+</html>
